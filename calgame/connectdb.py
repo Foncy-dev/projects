@@ -41,8 +41,8 @@ class Math :
             with mysql.connector.connect(
                 host = 'localhost',
                 user = 'root',
-                password = 'HustlerNATION21@',
-                database = 'calculator_game'
+                password = '',
+                database = ''
             ) as connection:
                 with connection.cursor() as cursor:
                     query = "INSERT INTO calculations (num1, num2, opchoose, result) VALUES (%s, %s, %s, %s)"
